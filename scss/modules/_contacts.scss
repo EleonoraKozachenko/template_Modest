@@ -1,0 +1,96 @@
+.contacts {
+  padding: 85px 0 100px;
+
+  &__map-img {
+    max-height: 346px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__row {
+    display: flex;
+    position: relative;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+
+  &__column-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $gray-dark;
+    text-transform: uppercase;
+    margin: 60px 0 40px;
+  }
+
+  &__column-text {
+    color: $gray2;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__form {
+    padding: 30px;
+    position: absolute;
+    top: -145px;
+    background-color: $tertiary;
+  }
+
+  &__input-name {
+    color: $gray2;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    background-color: $gray-light6;
+    border-radius: 3px;
+    height: 44px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+
+  &__textarea {
+    background-color: $gray-light6;
+    border-radius: 3px;
+    font-size: 16px;
+    resize: none;
+    height: 140px;
+    font-family: "Myriad-Pro";
+    padding: 10px;
+    width: calc(100% - 20px);
+    line-height: 1.5;
+  }
+
+  &__button {
+    color: $tertiary;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    min-width: 120px;
+    border: 2px solid $secondary;
+    background-color: $secondary;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
