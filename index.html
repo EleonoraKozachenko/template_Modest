@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="scss/style.css" />
   </head>
-  <body>
+  <body> 
     <header class="header">
       <div class="wrapper">
         <div class="header__row">
           <a href="index.html">
-          <img class="header__logo" src="./images/modest_logo@2x.png" alt="main logo"/>
+            <img class="header__logo" src="./images/modest_logo@2x.png" alt="main logo"/> 
+          </a>
           <nav class="header__nav">
             <a href="#" class="header__nav-item header__nav-item--active">home</a>
             <a href="#" class="header__nav-item">about</a>
@@ -24,7 +25,9 @@
             <a href="#" class="header__nav-item">features</a>
             <a href="#" class="header__nav-item">contact</a>
           </nav>
-        </a>
+          <button class="header__mobile-button">  
+            <div class="line"></div>
+          </button>
         </div>
         </div>
       </div>
@@ -120,7 +123,7 @@
     </section>
     <section class="section team">
       <div class="wrapper">
-        <p class="title">meet the team.</p>
+        <p class="title animate__animated animate__bounceInLeft wow slideInLeft" data-wow-offset="100">meet the team.</p>
         <div class="team__row">
           <div class="team__box">
             <div class="team__box-img">
@@ -187,7 +190,7 @@
     </section>
     <section class="section dark portfolio">
       <div class="wrapper">
-        <p class="title white">lovely work.</p>
+        <p class="title white animate__animated animate__bounceInLeft wow slideInLeft" data-wow-offset="100">lovely work.</p>
         <div class="portfolio__row">
           <div class="portfolio__box">
             <div class="portfolio__box-img">
@@ -257,7 +260,7 @@
     </section>
     <section class="section work">
       <div class="wrapper">
-        <p class="title">what we do.</p>
+        <p class="title animate__animated animate__bounceInLeft wow slideInLeft" data-wow-offset="100">what we do.</p>
         <div class="work__row">
           <div class="work__box">
             <img src="images/cogs-work@2x.png" alt="" class="work__box-icon">
@@ -312,7 +315,7 @@
     </section>
     <section class="section dark features">
       <div class="wrapper">
-        <p class="title white">FEATURES.</p>
+        <p class="title white animate__animated animate__bounceInLeft wow slideInLeft" data-wow-offset="100">FEATURES.</p>
         <div class="features__row">
           <div class="features__column">
             <img src="images/pic-features.png" alt="img" class="features__img">
@@ -340,21 +343,21 @@
     </section>
     <section class="section contacts">
       <div class="wrapper">
-        <p class="title">stay in touch.</p>
+        <p class="title animate__animated animate__bounceInLeft wow slideInLeft" data-wow-offset="100">stay in touch.</p>
       </div>
       <div class="contacts__map">
         <img src="images/map.png" alt="" class="contacts__map-img">
       </div>
       <div class="wrapper">
         <div class="contacts__row">
-          <div class="contacts__column">
+          <div class="contacts__column-info">
             <p class="contacts__column-title">contact information</p>
             <p class="contacts__column-text">Lorem ipsum dolor sit amet, consectetur adipiscing 
               elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor.   Nulla vestibulum 
               lacus sed molestie gravida.<br><br>Cras fermentum elit quis magna congue, <b>vel 
-              sodales</b> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus </p>
+              sodales</b> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus. </p>
           </div>
-          <div class="contacts__column">
+          <div class="contacts__column-form">
             <form action="#" class="contacts__form">
               <div class="contacts__form-row">
                 <div>
@@ -393,6 +396,7 @@
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script>
       $(document).ready(function () {
       $(".owl-carousel").owlCarousel({

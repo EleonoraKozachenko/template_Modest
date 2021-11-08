@@ -2,12 +2,13 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__box {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 
     &:hover {
       .team__box-hover {

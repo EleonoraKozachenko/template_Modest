@@ -1,7 +1,7 @@
 .portfolio {
   &__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
@@ -9,7 +9,7 @@
     max-width: 360px;
     max-height: 265px;
     position: relative;
-    margin-bottom: 30px;
+    margin: 0 10px 30px;
 
     &:hover {
       cursor: pointer;

@@ -3,6 +3,7 @@
   background-image: url("../images/pic.png");
   background-position-x: center;
   background-size: cover;
+  padding-left: 15px;
 
   .wrapper {
     position: relative;
@@ -39,6 +40,16 @@
     position: absolute;
     right: 380px;
     bottom: -190px;
+
+    @media (max-width: $breakpoint-md) {
+      right: 140px;
+      bottom: -180px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      right: 75px;
+      bottom: -100px;
+    }
 
     .owl-dot {
       display: block;
